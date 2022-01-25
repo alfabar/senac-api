@@ -37,7 +37,6 @@ app.get('/alunos/:id', (req, res) => {
 
     //res.send(`dADOS DE UM ALUNO`);
     const id = parseInt(req.params.id);
-
     lerUm(id, res);
 
 });
