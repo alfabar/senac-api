@@ -81,4 +81,4 @@ function atualizar(id, aluno, res) {
     });
 }
 
-export { ler, inserir, lerUm };
+export { ler, inserir, lerUm, atualizar };
