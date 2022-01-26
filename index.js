@@ -7,10 +7,10 @@
 // DELETE: ENDPOINT para excluir
 
 import express from "express";
-import { ler, inserir, lerUm, atualizar } from './src/aluno.js';
+import { ler, inserir, lerUm, atualizar, excluir } from './src/aluno.js';
 
 const app = express();
-const porta = 2112;
+const porta = process.env.PORT || 3000;
 
 /* habilitando o express a funcionar com dados JSON */
 app.use(express.json());
@@ -68,7 +68,9 @@ app.patch('/alunos/:id', (req, res) => {
 
 
 app.delete('/alunos/:id', (req, res) => {
-    res.send(`Excluindo um aluno`);
+    const id = parseInt(req.params.id);
+    excluir(id, res);
+    //res.send(`Excluindo um aluno`);
 });
 
 
