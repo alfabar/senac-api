@@ -11,7 +11,7 @@ import cors from 'cors';
 import { ler, inserir, lerUm, atualizar, excluir } from './src/aluno.js';
 
 const app = express();
-const porta = process.env.PORT || 3306;
+const porta = process.env.PORT || 3000;
 
 app.use(cors());
 /* habilitando o express a funcionar com dados JSON */
