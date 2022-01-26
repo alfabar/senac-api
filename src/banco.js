@@ -7,10 +7,10 @@ const conexao = mysql.createConnection({
     database: 'escola' */
 
     /* Versão remoto */
-    host: 'db4free.net',
-    user: 'admin_api_tiago',
-    password: 'Senac*123',
-    database: 'escola_tiago'
+    host: '108.167.151.32',
+    user: 'carr9069_apisenac',
+    password: '@235689',
+    database: 'carr9069_api-senac'
 });
 
 conexao.connect(erro => {
