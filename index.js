@@ -24,6 +24,7 @@ app.use(express.urlencoded({ extended: true }));
 /* ROTAS */
 app.get('/', (req, res) => {
     res.send('Api de alunos com Node.js, Express e Mysql');
+    //res.redirect(`https://documenter.getpostman.com/view/3467332`);
 });
 
 
